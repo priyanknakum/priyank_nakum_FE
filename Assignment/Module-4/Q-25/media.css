@@ -1,0 +1,300 @@
+@media screen and (max-width: 500px) {
+  * {
+    padding: 0;
+  }
+  header {
+    justify-content: space-between;
+    padding: 25px;
+  }
+  nav ul {
+    width: 80vw;
+    padding-left: 25px;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    position: absolute;
+    top: 10%;
+    left: -100%;
+    transition: all 500ms ease-in-out;
+    padding-bottom: 10px;
+  }
+  #menubar {
+    display: inline-block;
+    font-size: 2em;
+  }
+  input[type="checkbox"]:checked ~ ul {
+    left: 0;
+    background: #fbfafe;
+    width: 100%;
+  }
+  li:hover .fa-solid.fa-angle-down {
+    transform: rotate(-90deg);
+  }
+  .btns,
+  .log-in,
+  .get-std-free {
+    display: none !important;
+  }
+  /* -------------------------hero-section -------------------*/
+  .hero-section br {
+    display: none;
+  }
+  .hero-section .data p {
+    margin: 0 10px;
+  }
+  .hero-section .data h1 {
+    margin: 0 10px;
+  }
+  .hero-section img {
+    width: 100%;
+  }
+  .hero-section .offer {
+    padding: 7px;
+  }
+  .hero-section .offer .save {
+    display: none;
+  }
+  .hero-section .take-data input {
+    border-radius: 6px;
+    width: 100%;
+  }
+  .hero-section .take-data {
+    gap: 10px;
+  }
+  .hero-section .take-data .try-it-free {
+    border-radius: 6px;
+    padding: 17.5px 25px;
+    width: 100%;
+  }
+  .teams {
+    padding: 0 10px;
+  }
+  .teams .boxes {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  /* ----------------working-section------------ */
+  .working-section {
+    padding: 25px 15px;
+    height: auto;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .timeline {
+    width: 100%;
+  }
+  .working-section img {
+    width: 100%;
+  }
+  .working-section .steps {
+    width: 100%;
+  }
+  .working-section .steps .step {
+    line-height: 25px;
+    text-align: center;
+    width: 100%;
+  }
+  .working-section .steps .step:hover {
+    border-left: 0 !important;
+    border-bottom-right-radius: 0;
+    border-bottom: 5px solid #794cff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #f6f3fc;
+  }
+  /* ------------helping-section------------- */
+  .helping-section .service {
+    width: 100%;
+  }
+  .helping-section .services {
+    height: 50vh;
+    overflow: hidden auto;
+  }
+  /* --------------timing-section------------ */
+  .timing-section {
+    padding: 35px 25px;
+    height: auto;
+    flex-direction: column-reverse;
+    gap: 35px;
+  }
+  .timing-section .img {
+    width: 100%;
+  }
+  .timing-section .data {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .timing-section .data .btn {
+    width: 100%;
+  }
+  .timing-section br {
+    display: none;
+  }
+  /* ----------customer-section----------- */
+  .customer-section {
+    padding-top: 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .customer-section br {
+    display: none;
+  }
+  .customer-section .customers {
+    flex-wrap: wrap;
+  }
+  /* .customer-section .customers .box:nth-child(2) {
+    display: none;
+  }
+  .customer-section .customers .box:nth-child(3) {
+    display: none;
+  } */
+  .download {
+    font-size: 1.7rem;
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+    border-radius: 0;
+  }
+  .download .imgs {
+    flex-direction: column;
+  }
+  /* -----------------footer-------------- */
+  footer {
+    padding: 25px 0;
+    flex-direction: column;
+  }
+  footer .imgs {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  footer ul {
+    display: none;
+    transition: all 1s;
+  }
+  footer > div:hover ul {
+    display: block;
+  }
+  footer > div ul {
+    padding-left: 20px;
+  }
+  footer .fa-angle-down {
+    display: inline-block;
+  }
+  footer > div h4 {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .install img {
+    width: 50%;
+  }
+  .copy-right {
+    padding-left: 15px;
+  }
+  .copy-right .icons {
+    display: none;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  header {
+    justify-content: space-between;
+    padding: 25px;
+  }
+  nav ul {
+    width: 80vw;
+    padding-left: 25px;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    position: absolute;
+    top: 10%;
+    left: -100%;
+    transition: all 500ms ease-in-out;
+    padding-bottom: 10px;
+  }
+  #menubar {
+    display: inline-block;
+    font-size: 2em;
+  }
+  input[type="checkbox"]:checked ~ ul {
+    left: 0;
+    background: #fbfafe;
+    width: 100%;
+  }
+  li:hover .fa-solid.fa-angle-down {
+    transform: rotate(-90deg);
+  }
+  .btns,
+  .log-in,
+  .get-std-free {
+    display: none !important;
+  }
+  .hero-section img {
+    width: 100%;
+  }
+  .working-section {
+    padding: 25px;
+    height: auto;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .timeline {
+    width: 100%;
+  }
+  .working-section img {
+    width: 100%;
+  }
+  .working-section .steps {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+  }
+  .working-section .steps .step {
+    width: 40%;
+    line-height: 25px;
+    text-align: center;
+  }
+  .working-section .steps .step:hover {
+    border-left: 0 !important;
+    border-bottom-right-radius: 0;
+    border-bottom: 5px solid #794cff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #f6f3fc;
+  }
+  .timing-section {
+    padding: 25px;
+    height: auto;
+    flex-direction: column-reverse;
+    gap: 35px;
+  }
+  .timing-section .img {
+    width: 100%;
+  }
+  .timing-section .data {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .timing-section .data .btn {
+    /* width: 100%; */
+  }
+  .timing-section br {
+    display: none;
+  }
+  .download {
+    font-size: 1.7rem;
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+/* ---------------------------------------header-------------------------- */
+header {
+  background-color: #fbfafe;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px 0;
+}
+nav ul {
+  padding-left: 20px;
+  display: flex;
+  gap: 50px;
+}
+li {
+  list-style-type: none;
+  transition: all 300ms;
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
+li .fa-solid.fa-angle-down {
+  transition: all 100ms;
+  opacity: 0;
+}
+li:hover .fa-solid.fa-angle-down {
+  opacity: 1;
+}
+
+header .logo {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2em;
+}
+#check {
+  display: none;
+}
+header > .btns {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+header > .btns .get-std-free {
+  color: #794cff;
+  background-color: #ece5ff;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+header > .btns .log-in {
+  cursor: pointer;
+}
+#menubar {
+  display: none;
+  cursor: pointer;
+}
+/* ---------------------------hero-section-------------------- */
+.hero-section {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.hero-section .offer {
+  display: flex;
+  align-items: center;
+  background-color: #e8f4db;
+  border-radius: 25px;
+  padding-right: 5px;
+  gap: 5px;
+}
+.hero-section .offer .save {
+  background-color: #81c43b;
+  border-radius: 25px;
+  padding: 5px;
+}
+.hero-section .data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.hero-section .data h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: -5px;
+}
+.hero-section .data p {
+  text-align: center;
+}
+.hero-section .take-data {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hero-section .take-data input {
+  width: 300px;
+  height: 50px;
+  background-color: #fbfafe;
+  border: 1px solid rgba(0, 0, 0, 0.49);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding-left: 10px;
+}
+.hero-section .take-data .try-it-free {
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: #794cff;
+  padding: 15.8px 50px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+/* -------------------teams-section-------------------- */
+.teams {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.teams p {
+  text-align: center;
+}
+.teams .boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+/* ----------------- working-section----------------*/
+.working-section {
+  margin-top: 50px;
+  padding: 50px;
+  background-color: #fbfafe;
+  display: flex;
+  align-items: center;
+  gap: 75px;
+}
+.timeline {
+  width: 50%;
+}
+.working-section img {
+  height: 70%;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.working-section .steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* width: 40%; */
+  gap: 35px;
+}
+.working-section .steps .step {
+  padding: 30px 15px;
+  line-height: 20px;
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+  border-left: 10px solid transparent;
+}
+.working-section .steps .step:hover {
+  border-left: 10px solid #794cff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #f6f3fc;
+}
+/* ---------------helping section---------------- */
+.helping-section {
+  margin-top: 50px;
+  padding: 0 50px;
+}
+.helping-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.helping-section .services {
+  /* overflow: hidden; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 50px;
+  align-items: center;
+}
+.helping-section .service {
+  /* width: 100vw; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.helping-section .service .data {
+  line-height: 30px;
+}
+.icon-1 {
+  background-color: #fef6ee;
+  padding: 10px;
+  /* border: 1px solid; */
+  border-radius: 50%;
+}
+.icon-2 {
+  background-color: #e8fafa;
+  padding: 15px 15px 10px 10px;
+  /* border: 1px solid; */
+  border-radius: 50%;
+}
+.icon-3 {
+  background-color: #f7ebf9;
+  padding: 10px;
+  /* border: 1px solid; */
+  border-radius: 50%;
+}
+.icon-4 {
+  background-color: #ffeff3;
+  padding: 10px 10px 5px 10px;
+  /* border: 1px solid; */
+  border-radius: 50%;
+}
+.icon-5 {
+  background-color: #ede8f7;
+  padding: 10px;
+  /* border: 1px solid; */
+  border-radius: 50%;
+}
+.icon-6 {
+  background-color: #fef5ec;
+  padding: 10px 10px 5px 10px;
+  /* border: 1px solid; */
+  border-radius: 50%;
+  /* --------------timing-section---------- */
+}
+.timing-section {
+  margin-top: 50px;
+  height: 80vh;
+  background-color: #fbfafe;
+  padding: 50px 100px;
+  display: flex;
+  align-items: center;
+}
+.timing-section .data {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+}
+.timing-section .data h2 {
+  font-size: 2rem;
+}
+.timing-section .data .btn {
+  cursor: pointer;
+  color: #fff;
+  background-color: #796eff;
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+.timing-section .img {
+  height: 100%;
+  width: 50%;
+}
+.timing-section .img img {
+  height: 100%;
+  width: 100%;
+}
+.customer-section {
+  margin-top: 50px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.customer-section .data {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+}
+.customer-section .customers {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.customer-section .customers .box {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-top: 15px;
+  transition: all 100ms;
+}
+.customer-section .customers .box:hover {
+  border-top: 2px solid #000;
+}
+.customer-section .customers .box .name {
+  line-height: 20px;
+}
+.download {
+  margin: 25px 10%;
+  font-size: 2rem;
+  text-align: left;
+  color: #fff;
+  width: 80%;
+  padding: 35px 20px;
+  background-color: #796eff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 140px;
+  border-radius: 10px;
+}
+.download .imgs {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+footer {
+  padding: 45px 0;
+  color: #fff;
+  background-color: #1d2830;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer > div {
+  line-height: 35px;
+}
+footer .install .imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+footer .fa-angle-down {
+  display: none;
+}
+.copy-right {
+  padding: 25px 50px;
+  color: #fff;
+  background-color: #1d2830;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copy-right .icons {
+  display: flex;
+  gap: 25px;
+}
+.copy-right .icons .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333d44;
+  padding: 10px;
+  border-radius: 50%;
+}

@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section {
+  height: 100vh;
+  width: 100%;
+  background-image: url(imgs/bg-img.png);
+  background-repeat: no-repeat;
+  background-position: 45% 0;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.wave {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  color: #fff;
+  text-align: center;
+  margin-top: 12%;
+}
+.data h2 {
+  letter-spacing: 4px;
+}
+.data .dot {
+  /* border: 1px solid; */
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: #ffffff77;
+  position: relative;
+}
+.data .dot::before {
+  content: "";
+  background-color: #ffffff77;
+  height: 1px;
+  width: 50px;
+  position: absolute;
+  top: 2px;
+  left: -60px;
+}
+.data .dot::after {
+  content: "";
+  background-color: #ffffff77;
+  height: 1px;
+  width: 50px;
+  position: absolute;
+  top: 2px;
+  left: 15px;
+}
+.team {
+  border: 4px solid #ea0303;
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  cursor: pointer;
+}
+.t-1 {
+  top: 83%;
+  left: 12%;
+}
+.t-2 {
+  top: 67%;
+  left: 30%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.t-3 {
+  top: 66%;
+  left: 54%;
+}
+.t-4 {
+  top: 71%;
+  left: 73%;
+}
+.t-5 {
+  top: 61%;
+  left: 90%;
+}
+.line {
+  transition: all 100ms;
+}
+.role {
+  transition: all 100ms;
+}
+.line-1 {
+  position: absolute;
+  top: 92%;
+  left: 13.7%;
+  height: 10px;
+  width: 2px;
+  background-color: #fff;
+}
+.line-2 {
+  position: absolute;
+  top: 79.7%;
+  left: 32.75%;
+  height: 50px;
+  width: 2px;
+  background-color: #fff;
+}
+.line-3 {
+  position: absolute;
+  top: 75%;
+  left: 55.8%;
+  height: 50px;
+  width: 2px;
+  background-color: #fff;
+}
+.line-4 {
+  position: absolute;
+  top: 79.7%;
+  left: 75%;
+  height: 50px;
+  width: 2px;
+  background-color: #fff;
+}
+.line-5 {
+  position: absolute;
+  top: 70%;
+  left: 92%;
+  height: 50px;
+  width: 2px;
+  background-color: #fff;
+}
+.role-1 {
+  text-align: center;
+  line-height: 20px;
+  position: absolute;
+  top: 93.5%;
+  left: 9%;
+}
+.role-1 h4 {
+  color: #ea0303;
+}
+.role-1 h4 ~ h6 {
+  color: #fff;
+}
+.role-2 {
+  text-align: center;
+  line-height: 20px;
+  position: absolute;
+  top: 87%;
+  left: 28%;
+}
+.role-2 h4 {
+  color: #ea0303;
+}
+.role-2 h4 ~ h6 {
+  color: #fff;
+}
+.role-3 {
+  text-align: center;
+  line-height: 20px;
+  position: absolute;
+  top: 83%;
+  left: 49%;
+}
+.role-3 h4 {
+  color: #ea0303;
+}
+.role-3 h4 ~ h6 {
+  color: #fff;
+}
+.role-4 {
+  text-align: center;
+  line-height: 20px;
+  position: absolute;
+  top: 87%;
+  left: 69%;
+}
+.role-4 h4 {
+  color: #ea0303;
+}
+.role-4 h4 ~ h6 {
+  color: #fff;
+}
+.role-5 {
+  text-align: center;
+  line-height: 20px;
+  position: absolute;
+  top: 77.5%;
+  left: 85%;
+}
+.role-5 h4 {
+  color: #ea0303;
+}
+.role-5 h4 ~ h6 {
+  color: #fff;
+}
+.role {
+  display: none;
+}
+.line {
+  display: none;
+}
+.box:hover .role {
+  display: block;
+}
+.box:hover .line {
+  display: block;
+}
