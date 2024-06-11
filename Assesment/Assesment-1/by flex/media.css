@@ -1,0 +1,354 @@
+@media (max-width: 500px) {
+  br {
+    display: none;
+  }
+  header .contact .disc {
+    display: none;
+  }
+  header .navbar {
+    font-size: 1.5rem;
+    justify-content: space-between;
+    padding: 0 15px;
+    position: relative;
+  }
+  header .contact {
+    padding: 10px 0;
+    justify-content: center;
+  }
+  .fa-solid.fa-bars {
+    font-size: 1.5rem;
+  }
+  nav #menu {
+    background-color: #00000064;
+    flex-direction: column;
+    gap: 15px;
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    padding: 0 10px;
+    z-index: 5;
+  }
+  header .navbar nav i {
+    display: block;
+  }
+  nav #menu li a {
+    color: #fff;
+  }
+  nav:hover #menu {
+    display: flex;
+    z-index: 5;
+  }
+
+  /* --------------education-section----------- */
+
+  .education-section .data {
+    padding-right: 10px;
+    top: 19%;
+    gap: 20px;
+  }
+  .education-section .data br {
+    display: none;
+  }
+  .education-section .speciality {
+    background-image: url(imgs/meetings-bg.jpg);
+    background-attachment: fixed;
+    position: static;
+    /* top: 90%; */
+    padding: 10px;
+    height: 50vh;
+    flex-wrap: wrap;
+    overflow-y: auto;
+  }
+  .education-section .speciality .arr {
+    display: none;
+  }
+  /* ---------------- meeting-section------------ */
+  .meetings {
+    padding-top: 40px;
+  }
+  .meetings .container {
+    padding-top: 20px;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .meetings .container .Catagories {
+    width: 100%;
+  }
+  .meetings .container .types {
+    width: 100%;
+  }
+  /* ----------apply-section-------------- */
+  .apply-section {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .apply-section .degree {
+    width: 100%;
+  }
+  .apply-section .details {
+    padding-left: 10px;
+    width: 100%;
+  }
+  /* ------------course-section-------- */
+  .course-section {
+    padding: 15px;
+  }
+  .course-section h2 {
+    margin-bottom: 5px;
+  }
+  .course-section .container {
+    margin-top: 25px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .course-section .container .box .data {
+    padding: 10px 15px;
+  }
+  .course-section .arr {
+    display: none;
+  }
+  /* --------------facts-section----------- */
+  .facts-section {
+    flex-direction: column;
+  }
+  .facts-section .count {
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+  .facts-section .count h2 {
+    font-size: 1.5rem;
+  }
+  .facts-section .count .container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .facts-section .count .container .col {
+    gap: 15px;
+  }
+  .facts-section .count .container .col-1 {
+    position: static;
+  }
+  .facts-section .video {
+    padding: 25px;
+    width: 100%;
+  }
+  .facts-section .video .link .video-bg {
+    width: 100%;
+    border-radius: 20px;
+  }
+  .facts-section .video .link {
+    position: relative;
+  }
+  .facts-section .video .link .play-icon {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+  }
+  /* -------------------form-section------------ */
+  .form-section {
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px;
+  }
+  .form-section .form {
+    width: 100%;
+    gap: 15px;
+  }
+  .form-section .form .r-1 {
+    width: 100%;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .form-section .form .r-1 input {
+    width: 100%;
+  }
+  .form-section .form .r-2 textarea {
+    width: 100%;
+  }
+  .form-section .inquary {
+    width: 100%;
+  }
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+}
+/*  ----------------tablet-media ------------------- */
+
+@media (min-width: 501px) and (max-width: 1024px) {
+  br {
+    display: none;
+  }
+  header .contact {
+    padding: 10px 15px;
+  }
+  header .contact .socials {
+    width: auto;
+  }
+  header .navbar {
+    justify-content: space-between;
+    padding: 0 25px;
+    position: relative;
+  }
+  nav #menu {
+    background-color: #00000064;
+    flex-direction: column;
+    gap: 15px;
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    padding: 0 10px;
+  }
+  header .navbar nav i {
+    display: block;
+    font-size: 2rem;
+  }
+  nav #menu li a {
+    color: #fff;
+  }
+  nav:hover #menu {
+    display: flex;
+  }
+  .education-section .speciality {
+    margin-top: -50px;
+    background-image: url(imgs/meetings-bg.jpg);
+    background-attachment: fixed;
+    margin: 0;
+    position: static;
+    padding: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  .education-section .speciality .arr {
+    display: none;
+  }
+
+  .education-section .data {
+    top: 15%;
+  }
+  .meetings {
+    padding-top: 50px;
+  }
+  .meetings .container {
+    flex-direction: column;
+    padding: 0 25px;
+  }
+  .meetings .container .Catagories {
+    width: 100%;
+  }
+  .meetings .container .types {
+    width: 100%;
+  }
+  .meetings .container .types .type {
+    width: 100%;
+  }
+  .meetings .container .types .type .date {
+    top: 85%;
+    left: 5%;
+  }
+  /* ----------apply-section-------------- */
+  .apply-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .apply-section .degree {
+    width: 100%;
+  }
+  .apply-section .details {
+    width: 100%;
+  }
+  /* -----------course-section---------- */
+  .course-section {
+    padding: 15px 0;
+  }
+  .course-section .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px;
+    margin-top: 0;
+  }
+  .course-section .arr {
+    display: none;
+  }
+  .course-section .container .box {
+    width: 45%;
+  }
+  .course-section .container .box .data {
+    padding: 15px 20px;
+  }
+  /* --------------facts-section----------- */
+  .facts-section {
+    flex-direction: column;
+  }
+  .facts-section .count {
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+  .facts-section .count h2 {
+    font-size: 1.5rem;
+  }
+  .facts-section .count .container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .facts-section .count .container .col {
+    gap: 15px;
+  }
+  .facts-section .count .container .col-1 {
+    position: static;
+  }
+  .facts-section .video {
+    padding: 25px;
+    width: 100%;
+  }
+  .facts-section .video .link .video-bg {
+    width: 100%;
+    border-radius: 20px;
+  }
+  .facts-section .video .link {
+    position: relative;
+  }
+  .facts-section .video .link .play-icon {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+  }
+  /* ------------------------form-section--------- */
+  .form-section {
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px;
+  }
+  .form-section .form {
+    width: 100%;
+    gap: 15px;
+  }
+  .form-section .form .r-1 {
+    width: 100%;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .form-section .form .r-1 input {
+    width: 100%;
+  }
+  .form-section .form .r-2 textarea {
+    width: 100%;
+  }
+  .form-section .inquary {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
