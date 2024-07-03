@@ -1,0 +1,71 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@media screen and (max-width: 480px) {
+  #nav-bar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+  }
+  #logo {
+    margin-left: 5px;
+  }
+  #menubar {
+    display: inline-block !important;
+    margin-left: 5px;
+  }
+  #nav-bar ul {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 4rem;
+    transform: translateY(-12.5rem);
+    opacity: 0;
+    transition: 0.7s;
+    z-index: -1;
+  }
+  #nav-bar ul li {
+    padding: 5px 10px;
+  }
+  .hid {
+    display: none;
+  }
+  #svg {
+    position: relative;
+  }
+  #svg-section {
+    margin-right: 10px;
+  }
+  #nav-bar ul li:hover .fa-angle-down {
+    transform: rotate(-90deg);
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  #nav-bar {
+    position: fixed;
+    justify-content: space-between;
+  }
+  #logo {
+    margin: 0 15px;
+  }
+  #menubar {
+    display: inline-block;
+    margin-left: 5px;
+  }
+  #nav-bar ul {
+    display: flex;
+    position: absolute;
+    margin-left: 10rem;
+  }
+  #nav-bar ul li {
+    padding: 5px 10px;
+  }
+  #svg-section svg {
+    margin-right: 7px;
+  }
+  #svg-section {
+    margin-right: 7px;
+  }
+ 
+}
