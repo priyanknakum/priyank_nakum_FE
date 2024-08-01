@@ -1,0 +1,365 @@
+/* ----------font---------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+/* CSS */
+.button-87 {
+    margin: 0px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-87:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-87:active {
+    transform: scale(0.95);
+}
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+:root {
+    --main-color: #FF4605;
+    --white: #fff;
+    --black: #141622;
+    --main-color-light: rgba(255, 70, 5, 0.7);
+}
+
+body {
+    background-color: var(--white);
+}
+
+.dark {
+    --white: #141622;
+    --black: #fff;
+}
+
+i {
+    color: var(--black);
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+svg {
+    cursor: pointer;
+}
+
+i:hover {
+    color: var(--main-color);
+}
+
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--main-color);
+}
+
+/* -------------------------------------------------header------------------------------------------------- */
+header {
+    background: var(--main-color);
+    width: 100%;
+}
+
+header .inside-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--black);
+    color: var(--white);
+    padding: 10px 0;
+    clip-path: polygon(8% 0%, 92% 0%, 96% 100%, 5% 100%);
+}
+
+header .inside-box .col1,
+header .inside-box .col2 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header .inside-box .col1 {
+    margin-left: 200px;
+}
+
+header .inside-box .col1 span,
+header .inside-box .col2 span {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .inside-box .col1 span i {
+    color: var(--main-color);
+}
+
+header .inside-box .col2 {
+    margin-right: 200px;
+}
+
+header .inside-box .col2 a {
+    color: var(--white);
+}
+
+header .inside-box .col2 .social {
+    display: flex;
+    gap: 5px;
+}
+
+header .inside-box .col2 .social i {
+    color: var(--white);
+    cursor: pointer;
+}
+
+header .inside-box .col2 a:hover,
+header .inside-box .col2 .social i:hover {
+    color: var(--main-color);
+}
+
+/* -------------------------------------------Navbar------------------------------------------------------ */
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.5s;
+    background: var(--white);
+    box-shadow: 0 0 5px #bebebe80;
+    z-index: 100;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.nav-opt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.nav-opt .fa-solid {
+    color: var(--main-color);
+}
+
+.nav-section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+}
+
+.nav-section-1 img {
+    height: 100%;
+    width: 100%;
+}
+
+.nav-section-2 {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-section-2 li {
+    padding: 1rem 2px;
+}
+
+.nav-section-3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-section-3 #bar {
+    display: none;
+}
+
+/* ----------------------inventory-dropdown---------------- */
+nav .nav-section-2 .nav-opt .drop-down {
+    position: absolute;
+    top: 6rem;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 0 5px #bebebe80;
+    padding: 1rem 0;
+    display: none;
+}
+
+.drop-down li {
+    padding: 0.5rem;
+}
+
+.nav-section-2 .nav-opt li .fa-angle-up {
+    display: none;
+}
+
+.nav-section-2 .nav-opt li:hover .drop-down {
+    display: flex;
+    z-index: 100;
+}
+
+.nav-section-2 .nav-opt li:hover .fa-angle-down {
+    display: none;
+}
+
+.nav-section-2 .nav-opt li:hover .fa-angle-up {
+    display: inline-block;
+}
+
+/* --------------------------------------------section1--(offer)--------------------------------------- */
+
+#section1 .row1 {
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+#section1 .row2 .slide {
+    position: relative;
+    height: 50vh;
+    width: 100% !important;
+}
+
+#section1 .row2 .slide h3 {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff !important;
+    bottom: 0% !important;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    padding: 10px;
+}
+
+#section1 .row2 .slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sb {
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: #F09819;
+    color: #fff;
+}
+
+.slick-next {
+    display: none !important;
+}
+
+#section1 .row2 .swiper-slide .col h4,
+#section1 .row2 .swiper-slide .col h2,
+#section1 .row2 .swiper-slide .col p {
+    line-height: 30px;
+    padding: 5px 10px;
+}
+
+/* ----------------------------------------section-2-------------------------------------------- */
+#section2 .col .card-body {
+    background-color: var(--white) !important;
+    color: var(--black) !important;
+}
+
+#section2 .col img {
+    height: 40vh !important;
+}
+
+.filterDiv {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* --------------------------------------------footer-------------------------------------------------------- */
+footer {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-evenly !important;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+footer .social {
+    display: inline;
+}
+
+footer .social a i {
+    color: var(--white) !important;
+}
+
+footer .social a i:hover {
+    color: var(--main-color) !important;
+}
+
+.footerLogo {
+    height: 40px;
+    width: 200px;
+}
+
+footer p {
+    margin-top: 7px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+footer img {
+    width: auto;
+    cursor: pointer;
+}
+
+footer h3 {
+    text-align: start;
+}
+
+footer .f-2 {
+    padding: 0 50px;
+}
+
+.footerLogo img {
+    height: 100%;
+    width: 100%;
+}
+
+footer input,
+footer select {
+    padding: 10px;
+    width: 100% !important;
+}
