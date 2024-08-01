@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url('./cursor.jpeg'), auto !important;
+}
+
+.button-87 {
+    margin: 24px 0;
+    padding: 15px 40%;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-87:active {
+    transform: scale(0.95);
+    border: 1px solid;
+}
+
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form {
+    max-width: 400px;
+    height: 550px;
+    box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.2), -2px 0px 2px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    border-radius: 8px;
+    background: #F09819;
+}
+
+.btn {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-1,
+.btn-2 {
+    border: 2px solid gray;
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.title {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.or {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* -----------------------------------------------input-------------------------------------------------- */
+form label {
+    margin: 5px 0;
+    display: block;
+}
+
+form div input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border-radius: 8px;
+    border: 2px solid gray;
+    padding: 0 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+form div input:focus {
+    border-color: #f2796e;
+}
+
+form div {
+    position: relative;
+}
+
+form div i {
+    position: absolute;
+    padding: 10px;
+}
+
+.fa-circle-exclamation,
+.fa-circle-check {
+    right: 0%;
+    opacity: 0;
+}
+
+.fa-circle-exclamation,
+.error {
+    color: red;
+}
+
+.fa-circle-check {
+    color: green;
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
