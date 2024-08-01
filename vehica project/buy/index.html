@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Portal</title>
+    <link rel="shortcut icon" href="../images/logo/fav.jpeg" type="image/x-icon">
+    <!-- ----------------------------------bootstrap---------------------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!------------------------------------css stylesheet------------------------>
+    <link rel="stylesheet" href="../Buy/style.css">
+    <!-- ---------------------------------- Swiper-css----------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!------------------------------------ fonts awesome----------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- slick--------------------- css-------------------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <!-----------------------------------Media css stylesheet------------------>
+    <link rel="stylesheet" href="../Buy/media.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <!---------------------------------header--------------------------------->
+    <header>
+        <div class="inside-box">
+            <div class="col1">
+                <span><i class="fa-solid fa-envelope"></i> abcd@gmail.com</span>
+                <span><i class="fa-solid fa-phone"></i>+91 123 456 7890</span>
+            </div>
+            <div class="col2">
+                <span>KEEP IN TOUCH:</span>
+                <div class="social">
+                    <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-----------------------------------Navbar------------------------------->
+    <nav>
+        <div class="nav-section-1">
+            <img src="../images/logo/logo-light.png" alt="logo">
+        </div>
+        <div class="nav-section-2">
+            <ul class="nav-opt">
+                <li><a href="../home/index.html"><i class="fa-solid fa-home"></i> Home</a></li>
+                <li><a href="../Sell/index.html"><i class="fa-solid fa-truck"></i> Sell</a></li>
+                <li><a href="../FINANCE/index.html"><i class="fa-solid fa-coins"></i> Vehica Finance</a></li>
+                <li><a href="../About/index.html"><i class="fa-solid fa-house-laptop"></i> About</a></li>
+                <li><a href="../login/index.html"><i class="fa-solid fa-user"></i> login</a></li>
+            </ul>
+        </div>
+        <div class="nav-section-3">
+            <i id="bar" class="fa-solid fa-bars "></i>
+            <i id="theme" class="fa-solid fa-sun fa-moon "></i>
+        </div>
+    </nav>
+    <!-- --------------------------section1--(offer)--------------------->
+    <section id="section1" class="container-fluid">
+        <h1 class="row1">Our Special offered vehicle</h1>
+        <div class="row2 offer row p-3">
+            <div class="slide col-md-3">
+                <img src="../images/home/bmw.avif" />
+                <h3><span>BMW ix</span>
+                    <span>$6,500</span>
+                    <button class="sb" role="button">Buy</button> </span>
+                </h3>
+            </div>
+            <div class="slide">
+                <img src="../images/home/Creta.jpg" />
+                <h3><span>Hyundai Creta</span>
+                    <span>$3,500</span>
+                    <button class="sb" role="button">Buy</button> </span>
+                </h3>
+            </div>
+            <div class="slide">
+                <img src="../images/home/thar.avif" />
+                <h3><span>Mahindra Thar</span>
+                    <span>$2,500</span>
+                    <button class="sb" role="button">Buy</button> </span>
+                </h3>
+            </div>
+            <div class="slide">
+                <img src="../images/home/volv.avif" />
+                <h3><span>Volvo B8r</span>
+                    <span>$21,500</span>
+                    <button class="sb" role="button">Buy</button> </span>
+                </h3>
+            </div>
+
+            <div class="slide">
+                <img src="../images/home/hero-5.jpg" />
+                <h3><span>Audi Q3</span>
+                    <span>$10,000</span>
+                    <button class="sb" role="button">Buy</button> </span>
+                </h3>
+            </div>
+            <div class="slide">
+                <img src="../images/home/verna.webp" />
+                <h3><span>Hyundai Verna</span>
+                    <span>$7,500</span>
+                    <button class="sb" role="button">Buy</button> </span>
+                </h3>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------------section2-(new car)--------------------->
+    <section id="section2" class="container-fluid p-3">
+        <div class="row my-3 justify-content-center" id="myBtnContainer">
+            <div class="col-3"> <button type="button" class="btn   btn-outline-secondary"
+                    onclick="filterSelection('all')">All car</button></div>
+            <div class="col-3"> <button type="button" class="btn  btn-outline-secondary"
+                    onclick="filterSelection('used')">Used</button></div>
+            <div class="col-3"> <button type="button" class="btn  btn-outline-secondary"
+                    onclick="filterSelection('electric')">Electric</button></div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/HyundaiCreta.webp" alt="hyundai Creta">
+                    <div class="card-body">
+                        <p class="card-text m-0">Hyundai Creta</p>
+                        <p class="card-text fs-5">Rs 11 - 20.15 Lakh* </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/TataPunch.webp" alt="Tata Punch EVTata">
+                    <div class="card-body">
+                        <p class="card-text m-0"></p>Tata Punch EVTata
+                        <p class="card-text fs-5">Rs.10.99 - 15.49 Lakh* </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/TataNexon.webp" alt="Tata Punch EVTata">
+                    <div class="card-body">
+                        <p class="card-text m-0">Tata Nexon</p>
+                        <p class="card-text fs-5">Rs.8.10 - 15.50 Lakh* </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv used">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/OldSwifet.webp" alt="Tata Punch EVTata">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Maruti Swift VVT VXI</p>
+                        <p class="card-text fs-5">Rs.8.10 - 15.50 Lakh* </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">Used(2017)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv used">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/OldMarutiCelerio.webp" alt="Tata Punch EVTata">
+                    <div class="card-body">
+                        <p class="card-text m-0">Maruti Celerio</p>
+                        <p class="card-text fs-5">Rs 3.37 - 5.09 Lakh* </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">Used(2019)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv used">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/oldMarutiErtiga.webp" alt="Tata Punch EVTata">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Maruti Ertiga VXI</p>
+                        <p class="card-text fs-5">₹ 5.56 Lakh</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">Used(2013)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/KiaSaltos.webp" alt="Tata Punch EVTata">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Kia Seltos</p>
+                        <p class="card-text fs-5">Rs.10.90 - 20.30 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/KiaSonet.webp" alt="Tata Punch EVTata">
+                    <div class="card-body">
+                        <p class="card-text m-0">Kia Sonet </p>
+                        <p class="card-text fs-5">Rs.7.99 - 18.95 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/KiaEV6.webp" alt="Tata Punch EVTata">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Kia EV6 </p>
+                        <p class="card-text fs-5">Rs.60.95 - 65.95 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/ToyotaFortunerLegender.webp" alt="Tata Punch EVTata">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Toyota Fortuner Legender</p>
+                        <p class="card-text fs-5">Rs.43.66 - 47.64 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/ToyotaInnovaHycross.webp" alt="Tata Punch EVTata">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Toyota Innova Hycross</p>
+                        <p class="card-text fs-5">Rs.43.66 - 47.64 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/ToyotaBelta.webp" alt="Tata Punch EVTata">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Toyota Belta</p>
+                        <p class="card-text fs-5">Rs.10Lakh</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/HyundaiVerna.webp" alt="Tata Punch EVTata">
+                    <div class="card-body">
+                        <p class="card-text m-0">Hyundai Verna </p>
+                        <p class="card-text fs-5">Rs.11 - 17.42 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv used">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/Hyundaii20.webp" alt="Tata Punch EVTata">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Hyundai i20</p>
+                        <p class="card-text fs-5">Rs.5 - 7 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">used(2020)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv electric">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/XUV400EMahindra.webp" alt="Tata Punch EVTata">
+                    <div class="card-body">
+                        <p class="card-text m-0">Mahindra XUV400 EVMahindra </p>
+                        <p class="card-text fs-5">Rs.15.49 - 19.39 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">electric car</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv used">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/MahindraBolero.webp" alt="Tata Punch EVTata">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Mahindra Bolero</p>
+                        <p class="card-text fs-5">Rs.7.0 - 10 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">used(2020)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/HondaAmazeHonda.webp" alt="Tata Punch EVTata">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Honda AmazeHonda</p>
+                        <p class="card-text fs-5">Rs.7.25 - 10.01 Lakh*Get</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/HondaCity.webp" alt="Honda City ">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Honda City </p>
+                        <p class="card-text fs-5">Rs.11.81 - 16.29 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/MGHector.webp" alt=" MG Hector">
+                    <div class="card-body">
+                        <p class="card-text m-0"> MG Hector </p>
+                        <p class="card-text fs-5">Rs.14.95 - 21.95 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">new</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv electric">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/MGComet.webp " alt="Tata Punch EVTata">
+                    <div class="card-body">
+                        <p class="card-text m-0"> MG Comet EV </p>
+                        <p class="card-text fs-5">Rs.6.99 - 8.58 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">Electric</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new ">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/SkodaSlavia.webp" alt="Skoda Slavia">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Skoda Slavia</p>
+                        <p class="card-text fs-5">Rs.11.53 - 19.12 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/SkodaKodiaq.webp" alt="Tata Punch EVTata">
+                    <div class="card-body">
+                        <p class="card-text m-0">Skoda Kodiaq </p>
+                        <p class="card-text fs-5">Rs.38.50 - 41.99 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/RenaultKWID.webp" alt="">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Renault KWID </p>
+                        <p class="card-text fs-5">Rs.4.70 - 6.45 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/Triber.webp" alt="Renault Triber">
+                    <div class="card-body">
+                        <p class="card-text m-0">Renault Triber </p>
+                        <p class="card-text fs-5">Rs.6 - 8.97 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv electric">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/TataTiagoEV.webp" alt="">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Tata Tiago EV</p>
+                        <p class="card-text fs-5">Rs.8.69 - 12.09 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">Electric</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/JeepMeridian.webp" alt="">
+                    <div class="card-body">
+                        <p class="card-text m-0">Jeep Meridian </p>
+                        <p class="card-text fs-5">Rs.33.60 - 39.66 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/NissanMagnite.webp " alt="Nissan Magnite">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Nissan Magnite </p>
+                        <p class="card-text fs-5">Rs.6 - 11.27 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv used">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/NissanJuke.webp" alt="">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Nissan Juke</p>
+                        <p class="card-text fs-5">Rs15 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">used(2020)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/VolkswagenVirtus.webp" alt="">
+                    <div class="card-body">
+                        <p class="card-text m-0">Volkswagen Virtus </p>
+                        <p class="card-text fs-5">Rs.11.56 - 19.41 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/VolkswagenId.7.webp" alt="">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Volkswagen ID.7</p>
+                        <p class="card-text fs-5">Rs.70 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/BMWi4.webp" alt="">
+                    <div class="card-body">
+                        <p class="card-text m-0"> BMW i4 </p>
+                        <p class="card-text fs-5">Rs.72.50 - 77.50 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/BMWX1.webp" alt="">
+                    <div class="card-body">
+                        <p class="card-text m-0"> BMW X1 </p>
+                        <p class="card-text fs-5">Rs.48.90 - 51.60 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/BMWX3.webp" alt="">
+                    <div class="card-body">
+                        <p class="card-text m-0">BMW X3 </p>
+                        <p class="card-text fs-5">Rs.68.50 - 87.70 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv used">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/fordaspier.webp" alt="">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Ford Aspire</p>
+                        <p class="card-text fs-5">Rs.7 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">used(2020)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv used">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/FordEndeavour.webp" alt="">
+                    <div class="card-body">
+                        <p class="card-text m-0">Ford Endeavour </p>
+                        <p class="card-text fs-5">Rs.26.95 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">Used(2014)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv used">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/fordaspier.webp" alt="">
+                    <div class="card-body">
+                        <p class="card-text m-0">Ford Figo </p>
+                        <p class="card-text fs-5">Rs.3.5 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">Used(2013)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/VolvoXC60.webp" alt="">
+                    <div class="card-body">
+                        <p class="card-text m-0">Volvo XC60 </p>
+                        <p class="card-text fs-5">Rs.68.90 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/VolvoXC90.webp" alt="">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Volvo XC90 </p>
+                        <p class="card-text fs-5">Rs.1.01 Cr*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="colfilterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/mercidisGla.jpg" alt="mercidisGla" style="height: 40vh;">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Mercedes-Benz GLA</p>
+                        <p class="card-text fs-5">Rs.50.50 - 56.90 Lakh*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col filterDiv new">
+                <div class="card shadow-sm">
+                    <img src="../images/buy/Mercedes-BenzGLE.webp" alt="">
+                    <div class="card-body">
+                        <p class="card-text m-0"> Mercedes-Benz GLE </p>
+                        <p class="card-text fs-5">Rs.96.40 Lakh - 1.10 Cr*</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">New</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------------------------footer------------------------------------- -->
+    <footer>
+        <div class="col1 foot f-1">
+            <p class="footerLogo"></p>
+            <p>Keep In Touch:</p>
+            <p class="social">
+                <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+            </p>
+            <br>
+            <p>Experience Vehica APP</p>
+            <p><img src="../images/home/appstore.png" alt="">
+                <br><br>
+                <img src="../images/home/playstore.webp" alt="">
+            </p>
+        </div>
+        <div class="col2 foot f-2 ">
+            <h3 class="f">Useful Links</h3>
+            <p>About us</p>
+            <p>contact us</p>
+            <p>FaQ</p>
+            <p>Vehica Finance</p>
+            <p>blog</p>
+            <p>Become Our Partner</p>
+        </div>
+        <div class="col3 foot f-3 ">
+            <h3 class="f">Popular serach </h3>
+            <p>Vehica Pricing</p>
+            <p>Sell Used Car</p>
+            <p>Used Car Valuation</p>
+
+        </div>
+        <div class="col4 foot f-4">
+            <form action="">
+                <h3 class="f">Book appointment</h3>
+                <p><input type="text" placeholder="enter full name" required></p>
+                <p><input type="email" placeholder="enter your email" required></p>
+                <p><input type="submit" class="button-87"></p>
+            </form>
+        </div>
+    </footer>
+    <!-- -------------------------------------footer------------------------------------- -->
+
+</body>
+<!-- ------------------------------slider-script----------------------------->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- ------slider-script---------->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!---------- jquery-------- -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+<script src="../Buy/script.js"></script>
+
+</html>
